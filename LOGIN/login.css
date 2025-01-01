@@ -1,10 +1,10 @@
 html {
-    background-color: #95a5a6;
+    background-color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,49 +16,70 @@ body{
 form {
     width: 350px;
     padding: 20px;
-    border-radius: 5px;
-    background-color: #ecf0f1;
-    box-shadow: 3px 3px 10px #333;
-    padding: 1em;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 fieldset {
-    border : none;
+    border: none;
     padding: 0;
     margin: 0;
 }
 
-
-input,label {
+input, label {
     display: block;
     width: 100%;
     box-sizing: border-box;
 }
 
 label {
-    margin-bottom: .25em;
+    margin-bottom: 0.5em;
+    color: #333;
 }
 
 input {
-    padding: .75em;
-    border: 5px;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 1.5em;
-    
-    border : 1px solid #bbb;
     font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-legend  {
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+legend {
     padding: 1em;
     text-align: center;
     font-weight: bold;
-    color: #454e4f;
-    font-size: 1.2em;
-    margin-bottom: .5em;
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .btn {
     width: fit-content;
+    padding: 0.75em 1.5em;
     margin-left: auto;
     cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
