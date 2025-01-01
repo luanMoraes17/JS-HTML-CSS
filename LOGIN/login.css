@@ -1,0 +1,58 @@
+html {
+    background-color: #95a5a6;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    box-shadow: 3px 3px 10px #333;
+    padding: 1em;
+}
+
+fieldset {
+    border : none;
+    padding: 0;
+    margin: 0;
+}
+
+
+input,label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: .25em;
+}
+
+input {
+    padding: .75em;
+    border: 5px;
+    margin-bottom: 1.5em;
+    
+    border : 1px solid #bbb;
+    font-size: 1em;
+}
+
+legend  {
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
